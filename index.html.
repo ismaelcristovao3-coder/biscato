@@ -22,7 +22,16 @@ body{background:linear-gradient(180deg,#fff 0%,#fff 48%,#f8fafd 100%)}
 .category.active{box-shadow:inset 0 0 0 1px #ff8b4a,0 5px 14px rgba(244,123,59,.10)}
 .btn-primary{background:linear-gradient(135deg,#ff985d,#f47b3b)}
 .cta-band{background:linear-gradient(120deg,#172b4d 0%,#254a76 100%)}
-@media(max-width:620px){.top-actions #loginBtn{display:inline-flex!important;white-space:nowrap;padding:8px 10px;font-size:11px}}
+@media(max-width:700px){
+  header.topbar{height:auto;min-height:68px;padding:10px 12px;gap:8px;display:flex;align-items:center;justify-content:space-between;}
+  header.topbar .brand{flex:0 1 auto;font-size:19px;white-space:nowrap;}
+  header.topbar .top-actions{display:flex!important;flex:0 0 auto;align-items:center;gap:6px;margin-left:auto;}
+  header.topbar .top-actions #loginBtn{display:inline-flex!important;visibility:visible!important;opacity:1!important;white-space:nowrap;padding:8px 9px;font-size:11px;}
+  header.topbar .top-actions #postTopBtn{display:inline-flex!important;white-space:nowrap;padding:8px 9px;font-size:11px;}
+  header.topbar .top-actions #adminTopBtn{display:none!important;}
+}
+@media(max-width:380px){header.topbar .brand{font-size:17px}.top-actions{gap:4px!important}header.topbar .top-actions #loginBtn,header.topbar .top-actions #postTopBtn{padding:7px 7px;font-size:10px}}
+
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
 
